@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jantar - Lucas & Beatriz</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 16px;
+    background: #eef2f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .convite {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+  }
+  .convite img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* Áreas clicáveis invisíveis posicionadas em % para acompanhar a imagem
+     em qualquer tamanho de tela. */
+  .area-endereco {
+    position: absolute;
+    left: 22%;
+    top: 66.5%;
+    width: 58%;
+    height: 7.5%;
+    /* descomente a linha abaixo para enxergar a área durante testes */
+    /* background: rgba(255, 0, 0, 0.15); */
+  }
+  .area-cardapio {
+    position: absolute;
+    left: 33%;
+    top: 81%;
+    width: 36%;
+    height: 4%;
+    /* background: rgba(0, 200, 0, 0.15); */
+  }
+</style>
+</head>
+<body>
+
+  <div class="convite">
+    <img src="convite-jantar.png" alt="Convite do jantar de casamento de Lucas e Beatriz">
+    <a class="area-endereco"
+       href="https://maps.app.goo.gl/YaSSUXFehMBTGNUcA"
+       target="_blank"
+       aria-label="Abrir localização do Coco Bambu ParkShopping no Google Maps">
+    </a>
+    <a class="area-cardapio"
+       href="https://beta.livemenu.app/pt/menu/5e1379560a4ababa6dba3399?v=01a03fb7-634f-7ee7-b406-4f996241e83b&menu=6a8c542acb28c84206c3d55f&category=6a8c542acb28c84206c3d560"
+       target="_blank"
+       aria-label="Ver cardápio do Coco Bambu ParkShopping">
+    </a>
+  </div>
+
+</body>
+</html>
